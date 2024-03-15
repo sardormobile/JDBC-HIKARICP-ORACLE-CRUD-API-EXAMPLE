@@ -1,0 +1,15 @@
+spring:
+  jmx:
+    enabled: false
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    jdbc-url: jdbc:oracle:thin:@localhost:1521/xe
+    username: system
+    password: admin
+    pool-size: 30
+    hikari:
+      connection-timeout: 30000
+      idleTimeout: 30000
+      minimum-idle: 5
+      pool-name: MyCrudApi
+      leak-detection-threshold: 600000
